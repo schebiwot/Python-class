@@ -30,7 +30,7 @@ print(shoppingList)
 #del  .......deletes the whole list
 todo=['eat','code','sleep','repeat']
 print(todo)
-del todo
+#del todo
 print(todo)
 
 #clear ......removes items in a list
@@ -50,9 +50,35 @@ else:
 
 #Dictionary:item collection that are unordered,indexed and changable
 
+student={
+    "age": "22",
+    "height": "5.5",
+    "eyeColor":"blue",
+    "hairColor":"black",
+    "yearOfBirth":"2000"
+}
+print(student)
+print("the color of the student eyes is" + student["eyeColor"])
+
+student["hairColor"]="red"
+print(student)
+
+print(student.get("height"))
+#looping through dictionary
+#using the values() function to return values of a dictionary
+for x in student.values():
+    print(x)
+
+
+    for x in student:
+        print(student[x])
+#Looping through both keys and values, by using the items() function
+
+for x,y in student.items():
+    print(x,y)
 #Tuple: item collection that are ordered and unchangable
 
-#Set:item collection that are unordered and unchangable
+#Set:item collection that are unordered and unchangabl
 
 #variable name=['item1','item2','item3']
 
